@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.AppiumFramework.script.Amazon1">
+      <class name="com.AppiumFramework.script.Calendar">
         <methods>
           <include name="main"/>
         </methods>
-      </class> <!-- com.AppiumFramework.script.Amazon1 -->
+      </class> <!-- com.AppiumFramework.script.Calendar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

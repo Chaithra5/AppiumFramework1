@@ -5,6 +5,7 @@ import java.net.URL;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 
@@ -27,8 +28,7 @@ public class Amazon1 {
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy");
 	
 		driver=new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),cap);
-		
-		driver.findElement(By.xpath("//android.widget.RelativeLayout[@index='2']")).click();
+		driver.findElement(By.xpath("//android.widget.RelativeLayout[@index='2']")).click();;
 		Thread.sleep(2000);
 		Dimension size = driver.manage().window().getSize();
 		int startx=(int)(size.width*0.50);
